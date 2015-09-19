@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jarvis</title>
+
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="../static/css/window.css" />
+
+    <script src='../libs/responsivevoice.js'></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/annyang/2.0.0/annyang.min.js"></script>
+
+    <script src="../static/js/General.js"></script>
+    <script src="../static/js/Date.js"></script>
+
+    <script src="jarvis.js"></script>
+    <script src="../static/js/window.js"></script>
+    <script src="index.js"></script>
+    <script src="JarvisModules/Search.js"></script>
+    <script src="JarvisModules/Spotify.js"></script>
+    <script src="JarvisModules/ExternalApps.js"></script>
+    <script src="JarvisModules/Dictate.js"></script>
+    <script src="JarvisModules/League.js"></script>
+    <script src="../static/js/Messaging.js"></script>
+    <script src="../static/js/Prompt.js"></script>
+</head>
+<body>
+    <div class="title">
+        Jarvis
+        <a href="#" class="dev" data-action="dev">?</a>
+        <a href="#" class="close" data-action="close">&times;</a>
+    </div>
+    <div class="body">
+        <div class="status"></div>
+        <div id="console"></div>
+    </div>
+</body>
+</html>

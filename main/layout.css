@@ -1,0 +1,28 @@
+.status {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background: #d00;
+    animation-duration: 2s;
+    animation-name: wom;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, .4);
+    display: inline-block;
+    line-height: 120px;
+    -webkit-user-select: none;
+}
+
+
+@keyframes wom {
+    from {
+        opacity:0.8;
+    }
+
+    50% {
+        opacity:0.4;
+    }
+
+    to {
+        opacity:0.8;
+    }
+}

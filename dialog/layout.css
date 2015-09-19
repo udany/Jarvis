@@ -1,0 +1,96 @@
+body {
+    font-family: calibri, sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title, .body {
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .8);
+}
+.title {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-app-region: drag;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+.title a {
+    -webkit-app-region: no-drag;
+    -webkit-user-select: none;
+}
+.title .close {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    color: #900;
+    background: #955;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+.title .dev {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    color: #0CD;
+    background: #25A;
+    cursor: pointer;
+}
+.title .close:hover {
+    background: #b22;
+}
+.body {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 15px;
+    top: 25px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    text-align: center;
+}
+
+.status {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background: #d00;
+    animation-duration: 2s;
+    animation-name: wom;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, .4);
+    display: inline-block;
+    line-height: 120px;
+    -webkit-user-select: none;
+}
+
+
+@keyframes wom {
+    from {
+        opacity:0.8;
+    }
+
+    50% {
+        opacity:0.4;
+    }
+
+    to {
+        opacity:0.8;
+    }
+}
